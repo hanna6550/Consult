@@ -8,7 +8,7 @@ function Footer() {
     <div>
       
 
-<footer class="bg-white dark:bg-gray-900 ">
+<footer class="bg-gray-300 dark:bg-gray-900 pt-20">
     <div class=" flex-grow mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
@@ -22,10 +22,10 @@ function Footer() {
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="#" class="hover:underline">Gobeze</a>
+                          <a href="#" class="hover:underline md:hover:text-blue-700">Gobeze</a>
                       </li>
                       <li>
-                          <a href="#" class="hover:underline">Gobeze</a>
+                          <a href="#" class="hover:underline md:hover:text-blue-700">Gobeze</a>
                       </li>
                   </ul>
               </div>
@@ -33,10 +33,10 @@ function Footer() {
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="#" class="hover:underline ">Facebook</a>
+                          <a href="#" class="hover:underline md:hover:text-blue-700">Facebook</a>
                       </li>
                       <li>
-                          <a href="#" class="hover:underline">Instagram</a>
+                          <a href="#" class="hover:underline md:hover:text-blue-700">Instagram</a>
                       </li>
                   </ul>
               </div>
@@ -44,10 +44,10 @@ function Footer() {
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="#" class="hover:underline">Privacy Policy</a>
+                          <a href="#" class="hover:underline md:hover:text-blue-700">Privacy Policy</a>
                       </li>
                       <li>
-                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                          <a href="#" class="hover:underline md:hover:text-blue-700">Terms &amp; Conditions</a>
                       </li>
                   </ul>
               </div>

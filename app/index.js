@@ -1,87 +1,273 @@
 import React from 'react'
-import Navbar from './navbar'
-import Footer from './footer'
-import About from './about'
-import Services from './service'
-import Contact from './contact'
+import { Typewriter } from 'typewriter-effect';
+import Image from 'next/image'
+// import Team1 from '../public/assets/image/team1.png'
 
 function Index() {
   return (
-    <div>
-        <Navbar />
-        <div id='Home'>
-            <h1>home</h1>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
+    <div id='Home' className='max-w-6xl mx-auto px-4 sm:px-6'>
+
+      <div className="md:pt-20">
+          <div className="text-center md:pb-16">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Helping<span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-orange-400"> Good People Win</span></h1>
+            <div className="max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo assumenda autem molestias velit, maxime nihil id quo explicabo quis atque animi possimus, non ut iure perspiciatis</p>
+
+              <div>
+                <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Go</h1>
+                <Typewriter>
+                options={{
+                    strings: ["Learn", "Train", "Accelerate", "Work"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                </Typewriter>
+              </div>
+
+              <div className="sm:justify-center" >
+                <div>
+                  <a className="inline-flex items-center p-1 text-white-900 rounded font-medium bg-blue-200 hover:bg-orange-400" href="#">More About Us
+                  <svg class=" w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div id='About'>
-            <About/>
-        </div>
-        <div id='Services'>
-            <Services/>
-        </div>
-        <div id='Contact'>
-            <Contact/>
+
+        
+        {/* Services */}
+        <div>
+          <h1 className="text-center text-orange-400 text-2xl md:text-3xl font-bold mb-4" data-aos="zoom-y-out">Our Services</h1>
+
+          <ul className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
+          <li className="relative flex flex-col sm:flex-row xl:flex-col items-start max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                  <div className="order-1 sm:ml-6 xl:ml-0">
+                      <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                          <span className="mb-1 block text-2xl leading-6 text-indigo-500">Consulting</span>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo assumenda. </h3>
+                      <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo assumenda autem molestias velit, maxime nihil id quo explicabo quis atque.</p>
+                      </div>
+                      <a
+                          className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                          href="#">more<svg
+                              className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                              width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M0 0L3 3L0 6"></path>
+                          </svg>
+                          </a>
+                  </div>
+              </li>
+
+              <li className="relative flex flex-col sm:flex-row xl:flex-col items-start max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                  <div className="order-1 sm:ml-6 xl:ml-0">
+                      <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                          <span className="mb-1 block text-2xl leading-6 text-indigo-500">Training</span>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo assumenda. </h3>
+                      <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo assumenda autem molestias velit, maxime nihil id quo explicabo quis atque.</p>
+                      </div>
+                      <a
+                          className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                          href="#">more<svg
+                              className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                              width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M0 0L3 3L0 6"></path>
+                          </svg>
+                          </a>
+                  </div>
+              </li>
+              <li className="relative flex flex-col sm:flex-row xl:flex-col items-start max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                  <div className="order-1 sm:ml-6 xl:ml-0">
+                      <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                          <span className="mb-1 block text-2xl leading-6 text-indigo-500">Job Matching</span>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo assumenda. </h3>
+                      <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo assumenda autem molestias velit, maxime nihil id quo explicabo quis atque.</p>
+                      </div>
+                      <a
+                          className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                          href="#">more<svg
+                              className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                              width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M0 0L3 3L0 6"></path>
+                          </svg>
+                          </a>
+                  </div>
+              </li>
+          </ul>
+
+          <ul className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
+          <li className="relative flex flex-col sm:flex-row xl:flex-col items-start max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                  <div className="order-1 sm:ml-6 xl:ml-0">
+                      <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                          <span className="mb-1 block text-2xl leading-6 text-indigo-500">Consulting</span>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo assumenda. </h3>
+                      <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo assumenda autem molestias velit, maxime nihil id quo explicabo quis atque.</p>
+                      </div>
+                      <a
+                          className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                          href="#">more<svg
+                              className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                              width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M0 0L3 3L0 6"></path>
+                          </svg>
+                          </a>
+                  </div>
+              </li>
+
+              <li className="relative flex flex-col sm:flex-row xl:flex-col items-start max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                  <div className="order-1 sm:ml-6 xl:ml-0">
+                      <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                          <span className="mb-1 block text-2xl leading-6 text-indigo-500">Cconsulting</span>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo assumenda. </h3>
+                      <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo assumenda autem molestias velit, maxime nihil id quo explicabo quis atque.</p>
+                      </div>
+                      <a
+                          className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                          href="#">more<svg
+                              className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                              width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M0 0L3 3L0 6"></path>
+                          </svg>
+                          </a>
+                  </div>
+              </li>
+
+              
+
+
+              
+          </ul>
+
         </div>
 
-      <Footer />
+     {/* Benifits */}
+        <div>
+          <h1 className="text-center text-black-400 text-2xl md:text-3xl font-bold mb-4" data-aos="zoom-y-out">Benifits of Our community</h1>
+        </div>
+      
+      {/* The Teams */}
+        <div>
+          <h1 className="text-center text-black-400 text-2xl md:text-3xl font-bold mb-4" data-aos="zoom-y-out">Our Team</h1>
+          
+          <figure className="max-w-screen-md mx-auto text-center">
+              <svg className="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                  <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+              </svg>
+              <blockquote>
+                  <p className="text-2xl italic font-medium text-gray-900 dark:text-white">"Gobeze contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+              </blockquote>
+              <div className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                  <Image className="w-6 h-6 rounded-full" src="" alt="profile picture"/>
+                  <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
+                      <cite className="pe-3 font-medium text-gray-900 dark:text-white">Melake</cite>
+                      <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">CEO at Gobeze</cite>
+                  </div>
+              </div>
+          </figure>
+
+        </div>
+
+        {/* Partners */}
+        <div>
+        <h1 className="text-center text-black-400 text-2xl md:text-3xl font-bold mb-4" data-aos="zoom-y-out">Coordinate companies</h1>
+        </div>
+
+
+        {/* Tesitmonal */}
+
+
+
+        <div>
+          
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+
+          <div className="text-center text-black-400 text-2xl md:text-3xl font-bold mb-4" data-aos="zoom-y-out text-red-400">Tesitmonal</div>
+          <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
+            <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
+
+              <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
+                <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                  <svg className="absolute top-0 right-0 -mt-3 -mr-8 w-16 h-16 fill-current text-blue-500" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.89 58.338c-2.648-5.63-3.572-10.045-2.774-13.249.8-3.203 8.711-13.383 23.737-30.538l2.135.532c-6.552 10.033-10.532 17.87-11.939 23.515-.583 2.34.22 6.158 2.41 11.457l-13.57 8.283zm-26.963-6.56c-2.648-5.63-3.572-10.046-2.773-13.25.799-3.203 8.71-13.382 23.736-30.538l2.136.533c-6.552 10.032-10.532 17.87-11.94 23.515-.583 2.339.22 6.158 2.41 11.456l-13.57 8.283z" />
+                  </svg>
+                </div>
+                <blockquote className="text-xl font-small mb-4">
+                  “ I love this Lorem ipsum dolor sit amet consectetur adipisicing elit. Oexplicabo quis atque animi possimus, non ut iure perspiciatis “
+                </blockquote>
+                <cite className="block font-bold text-lg not-italic mb-1">Meme Youyou</cite>
+                <div className="text-gray-600">
+                  <span></span>The Graphics Design Tranie <a className="text-blue-600 hover:underline" href="#0"></a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div className="max-w-2xl mx-auto mt-20" data-aos="zoom-y-out">
+            <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
+
+              <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
+                <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                  <svg className="absolute top-0 right-0 -mt-3 -mr-8 w-16 h-16 fill-current text-blue-500" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.89 58.338c-2.648-5.63-3.572-10.045-2.774-13.249.8-3.203 8.711-13.383 23.737-30.538l2.135.532c-6.552 10.033-10.532 17.87-11.939 23.515-.583 2.34.22 6.158 2.41 11.457l-13.57 8.283zm-26.963-6.56c-2.648-5.63-3.572-10.046-2.773-13.25.799-3.203 8.71-13.382 23.736-30.538l2.136.533c-6.552 10.032-10.532 17.87-11.94 23.515-.583 2.339.22 6.158 2.41 11.456l-13.57 8.283z" />
+                  </svg>
+                </div>
+                <blockquote className="text-xl font-small mb-4">
+                  “ I love this Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo assumenda autem molestias velit, maxime nihil id quo explicabo quis atque animi possimus, non ut iure perspiciatis “
+                </blockquote>
+                <cite className="block font-bold text-lg not-italic mb-1">Meme Youyou</cite>
+                <div className="text-gray-600">
+                  <span></span>The Graphics Design Traniee <a className="text-blue-600 hover:underline" href="#0"></a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div className="text-center text-orange-400 text-2xl md:text-3xl font-bold leading-tighter mb-4" data-aos="zoom-y-out text-red-400">News</div>
+        <div className="text-center text-orange-400 text-2xl md:text-3xl font-bold leading-tighter mb-4" data-aos="zoom-y-out text-red-400">Contact Us<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </div>
+      
     </div>
+    
   )
 }
-
-export default Index
+export default Index;
