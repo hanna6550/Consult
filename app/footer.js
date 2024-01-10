@@ -8,7 +8,7 @@ function Footer() {
     <div>
       
 
-<footer class="bg-gray-300 dark:bg-gray-900 pt-20">
+<footer class="bg-gray-300 dark:bg-gray-900 pt-10 mt-20">
     <div class=" flex-grow mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">

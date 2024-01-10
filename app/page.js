@@ -12,10 +12,12 @@ export default function Home() {
     <div>
     <Navbar/>
     <Index/>
+
     <About/>
     <Services/>
     <Blog/>
     <Contact/>
+
     <Footer/>
     </div>
   )
